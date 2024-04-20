@@ -75,6 +75,15 @@ traefik_config:
             - main: kiwi-labs.net
               sans:
                 - '*.kiwi-labs.net'
+      murphcam:
+        rule: Host(`murphcam.kiwi-labs.net`)
+        service: murphcam-backend
+        tls:
+          certresolver: cloudflare
+          domains:
+            - main: kiwi-labs.net
+              sans:
+                - '*.kiwi-labs.net'
     services:
       ups-backend:
         loadBalancer:
@@ -108,4 +117,8 @@ traefik_config:
         loadBalancer:
           servers:
             - url: https://pfsense.diesel.net:8443
+      murphcam-backend:
+        loadBalancer:
+          servers:
+            - url: https://murphcam.diesel.net
 
