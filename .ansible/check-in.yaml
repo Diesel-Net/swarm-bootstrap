@@ -9,6 +9,8 @@
 
 - hosts: all
   strategy: linear
+  environment:
+    ANSIBLE_DEBUG: 1
   vars:
     ansible_user: "{{ lookup('env', 'CLOUD_INIT_USERNAME') }}"
     ansible_ssh_pass: "{{ lookup('env','CLOUD_INIT_PASSWORD') }}"
