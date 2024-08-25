@@ -23,7 +23,7 @@ You will need the following installed:
 
 1. Install Ansible.
    ```zsh
-   pip install --upgrade pip setuptools wheel pip-tools
+   pip install --upgrade pip setuptools wheel
    ```
    ```zsh
    pip install ansible==7.2.0
