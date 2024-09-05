@@ -33,7 +33,7 @@ steps:
       #ANSIBLE_DEBUG: '1'
     settings:
       inventory: .ansible/inventories/prod
-      limit: ns1.diesel.net
+      limit: 192.168.50.4
       galaxy: .ansible/roles/check-in_requirements.yaml
       playbook: .ansible/check-in.yaml
       vault_password:
