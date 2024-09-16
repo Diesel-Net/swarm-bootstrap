@@ -1,0 +1,2 @@
+options:
+  swarm_init: '--advertise-addr 191.168.50.4'
