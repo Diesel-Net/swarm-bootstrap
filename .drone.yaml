@@ -38,7 +38,6 @@ steps:
         from_secret: ansible_vault_password
       private_key:
         from_secret: automation_id_rsa
-      verbose: 4
 
 
 trigger:
